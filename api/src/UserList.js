@@ -10,11 +10,23 @@ export default function UserList() {
     })
 
     return (
-        <div>
+        <div className='container1'>
             
                 {listOfUSer.map(item =>(
-                <li key={item.id}>{item.username}</li>
-                
+
+ <div className="card text-center" key={item.id}>
+    <div className="card-header" style={{backgroundColor:'gold'}}>
+       <h4>{item.username}</h4> 
+        </div>
+<div className="card-body">
+  <p className="card-text">
+      <li>{item.name}</li>
+      <li>{item.email}</li>
+      <li>{item.phone}</li>
+    
+  </p>
+</div>
+</div>  
                 ))}
             
             
